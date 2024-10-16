@@ -1,3 +1,4 @@
+// The function returns the result of rockPaperScissors game between 2 players 
 function rockPaperScissors(player1, player2) {
   const winningPrecedence = {
     rock: ["scissors", "lizard"],
@@ -15,6 +16,7 @@ function rockPaperScissors(player1, player2) {
     return "player2";
   }
 }
+
 
 
 
