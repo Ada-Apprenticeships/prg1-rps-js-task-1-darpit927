@@ -1,6 +1,6 @@
 // The function returns the winner of Rock, Paper, Scissors game between 2 players 
 function rockPaperScissors(player1, player2) {
-  //Creates a constant that includes arrays showing what wins against what
+  //Creates a dictionary that includes arrays showing what wins against what
   const winningPrecedence = {
     rock: ["scissors", "lizard"],
     paper: ["rock", "spock"],
@@ -8,10 +8,12 @@ function rockPaperScissors(player1, player2) {
     lizard: ["spock", "paper"],
     spock: ["rock", "scissors"]
   };
-// Creates conditions that returns the winner 
+// Verifies conditions that returns the winner 
   if (player1 === player2) {
     return "draw";
-  } else if (winningPrecedence[player1].includes(player2)) {
+  }
+  // Returns player1 as the winner as long as player2's choice is included in player1's array in the dictionary 
+  else if (winningPrecedence[player1].includes(player2)) {
     return "player1";
   } else {
     return "player2";
