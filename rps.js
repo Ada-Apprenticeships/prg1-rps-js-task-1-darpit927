@@ -1,6 +1,6 @@
 // The function returns the winner of Rock, Paper, Scissors game between 2 players 
 function rockPaperScissors(player1, player2) {
-  //Creates a dictionary that includes arrays showing what wins against what
+  //Creates an object that includes arrays showing what wins against what
   const winningPrecedence = {
     rock: ["scissors", "lizard"],
     paper: ["rock", "spock"],
