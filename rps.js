@@ -9,18 +9,13 @@ function rockPaperScissors(player1, player2) {
     spock: ["rock", "scissors"]
   };
 // Verifies conditions that returns the winner 
-  if (player1 === player2) {
-    return "draw";
-  }
+  return player1 === player2
+  ? "draw"
   // Returns player1 as the winner as long as player2's choice is included in player1's array in the object 
-  else if (winningPrecedence[player1].includes(player2)) {
-    return "player1";
-  } else {
-    return "player2";
-  }
+  : winningPrecedence[player1].includes(player2)
+  ? "player1"
+  : "player2";
 }
-
-
 
 
 
